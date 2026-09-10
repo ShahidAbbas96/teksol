@@ -21,8 +21,8 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us | Book an ERP Consultation | Teksol"
-        description="Get in touch with Teksol to discuss your Odoo implementation, customization, integration, or support needs."
+        title="Contact Us | Book an ERP Consultation | TekSol"
+        description="Get in touch with TekSol to discuss your Odoo implementation, customization, integration, or support needs."
         path="/contact"
       />
 

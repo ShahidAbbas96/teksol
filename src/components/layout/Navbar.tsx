@@ -63,14 +63,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <Container>
         <nav ref={navRef} className="flex h-18 items-center justify-between py-3">
-          <Link to="/" className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-primary text-sm font-bold text-white">
-              {SITE_CONFIG.LOGO_TEXT.charAt(0)}
-            </span>
-            <span className="text-lg font-bold text-brand-dark">
-              {SITE_CONFIG.LOGO_TEXT}
-              <span className="text-brand-secondary">{SITE_CONFIG.LOGO_ACCENT}</span>
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={SITE_CONFIG.LOGO_HORIZONTAL_SRC} alt={SITE_CONFIG.LOGO_TEXT} className="h-9 w-auto" />
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">

@@ -53,14 +53,9 @@ export default function Footer() {
       <Container className="py-16">
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-5">
           <div className="col-span-2 lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-primary text-sm font-bold text-white">
-                {SITE_CONFIG.LOGO_TEXT.charAt(0)}
-              </span>
-              <span className="text-lg font-bold text-white">
-                {SITE_CONFIG.LOGO_TEXT}
-                <span className="text-brand-secondary">{SITE_CONFIG.LOGO_ACCENT}</span>
-              </span>
+            <Link to="/" className="flex items-center gap-2.5">
+              <img src={SITE_CONFIG.LOGO_ICON_SRC} alt="" className="h-8 w-auto" />
+              <span className="text-lg font-bold text-white">{SITE_CONFIG.LOGO_TEXT}</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">{SITE_CONFIG.TAGLINE}</p>
 

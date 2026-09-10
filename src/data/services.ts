@@ -68,7 +68,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "Odoo Implementation",
     shortTitle: "Implementation",
     icon: Rocket,
-    metaTitle: "Odoo Implementation Services | Teksol",
+    metaTitle: "Odoo Implementation Services | TekSol",
     metaDescription:
       "End-to-end Odoo ERP implementation services — discovery, configuration, data migration, training, and go-live support tailored to your business.",
     heroHeadline: "Odoo Implementation Built Around Your Business",
@@ -134,7 +134,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "Odoo Customization",
     shortTitle: "Customization",
     icon: Wrench,
-    metaTitle: "Odoo Customization Services | Teksol",
+    metaTitle: "Odoo Customization Services | TekSol",
     metaDescription:
       "Customize Odoo workflows, screens, reports, and business rules to match how your business actually operates.",
     heroHeadline: "Odoo Customized to Fit the Way You Work",
@@ -193,7 +193,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "Odoo Development",
     shortTitle: "Development",
     icon: Code2,
-    metaTitle: "Odoo Development Services | Teksol",
+    metaTitle: "Odoo Development Services | TekSol",
     metaDescription:
       "Custom Odoo module development for business logic, workflows, and functionality that standard Odoo apps don't cover.",
     heroHeadline: "Custom Odoo Modules for Unique Business Needs",
@@ -252,7 +252,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "Odoo Integration",
     shortTitle: "Integration",
     icon: Plug,
-    metaTitle: "Odoo Integration Services | Teksol",
+    metaTitle: "Odoo Integration Services | TekSol",
     metaDescription:
       "Connect Odoo with payment gateways, e-commerce platforms, APIs, and third-party systems for a single, connected business platform.",
     heroHeadline: "Connect Odoo With the Tools You Already Use",
@@ -311,7 +311,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "Odoo Migration",
     shortTitle: "Migration",
     icon: ArrowLeftRight,
-    metaTitle: "Odoo Data Migration Services | Teksol",
+    metaTitle: "Odoo Data Migration Services | TekSol",
     metaDescription:
       "Safely migrate business and ERP data into Odoo with structured data mapping, cleansing, and validation.",
     heroHeadline: "Move Your Business Data Into Odoo, Safely",
@@ -370,7 +370,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "Odoo Support",
     shortTitle: "Support",
     icon: LifeBuoy,
-    metaTitle: "Odoo Support & Maintenance Services | Teksol",
+    metaTitle: "Odoo Support & Maintenance Services | TekSol",
     metaDescription:
       "Ongoing Odoo technical support, troubleshooting, optimization, and maintenance to keep your ERP running reliably.",
     heroHeadline: "Odoo Support That Keeps Your Business Running",
@@ -429,7 +429,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     title: "ERP Consulting",
     shortTitle: "Consulting",
     icon: Compass,
-    metaTitle: "ERP Consulting Services | Teksol",
+    metaTitle: "ERP Consulting Services | TekSol",
     metaDescription:
       "Independent ERP consulting to help you select the right modules, design workflows, and plan your ERP transformation.",
     heroHeadline: "ERP Consulting to Plan Your Transformation",

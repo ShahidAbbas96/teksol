@@ -1,15 +1,21 @@
 /**
  * Centralized site configuration.
- * Change company details, contact info, social links, and brand colors here —
- * nothing below should be hard-coded elsewhere in the app.
+ * Change company details, contact info, social links, brand colors, and the
+ * logo files here — nothing below should be hard-coded elsewhere in the app.
  */
 
 export const SITE_CONFIG = {
-  COMPANY_NAME: "Teksol",
-  COMPANY_LEGAL_NAME: "Teksol LLC",
-  TAGLINE: "Your Odoo ERP Implementation & Technology Partner",
-  LOGO_TEXT: "Teksol",
-  LOGO_ACCENT: "",
+  COMPANY_NAME: "TekSol",
+  COMPANY_LEGAL_NAME: "TekSol LLC",
+  TAGLINE: "Smarter ERP. Stronger Business.",
+  LOGO_TEXT: "TekSol",
+
+  /** Icon mark only (transparent) — square, good for badges and favicons. */
+  LOGO_ICON_SRC: "/logo-icon.png",
+  /** Icon + wordmark, no tagline (transparent) — for light-background headers. */
+  LOGO_HORIZONTAL_SRC: "/logo-horizontal.png",
+  /** Icon + wordmark + tagline (transparent) — for larger brand placements. */
+  LOGO_FULL_SRC: "/logo-full.png",
 
   EMAIL: "hello@teksol.example",
   SUPPORT_EMAIL: "support@teksol.example",
@@ -30,10 +36,10 @@ export const SITE_CONFIG = {
 
   SEO: {
     siteUrl: "https://www.teksol.example",
-    defaultTitle: "Odoo ERP Implementation & Consulting | Teksol",
+    defaultTitle: "Odoo ERP Implementation & Consulting | TekSol",
     defaultDescription:
-      "Teksol helps businesses implement, customize, integrate, and optimize Odoo ERP solutions for smarter, connected business operations.",
-    ogImage: "/og-image.png",
+      "TekSol helps businesses implement, customize, integrate, and optimize Odoo ERP solutions for smarter, connected business operations.",
+    ogImage: "/logo-full.png",
   },
 } as const;
 

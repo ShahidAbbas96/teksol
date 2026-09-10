@@ -31,8 +31,8 @@ export default function Odoo() {
   return (
     <>
       <SEO
-        title="Odoo ERP Solutions Designed Around Your Business | Teksol"
-        description="Explore Odoo ERP modules, implementation, customization, integration, migration, and support services from Teksol."
+        title="Odoo ERP Solutions Designed Around Your Business | TekSol"
+        description="Explore Odoo ERP modules, implementation, customization, integration, migration, and support services from TekSol."
         path="/odoo"
       />
 
