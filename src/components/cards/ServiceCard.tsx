@@ -6,14 +6,18 @@ export default function ServiceCard({ slug, icon: Icon, title, description }: Se
   return (
     <Link
       to={`/services/${slug}`}
-      className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-150 hover:-translate-y-0.5 hover:border-brand-secondary/40 hover:shadow-lg hover:shadow-slate-200/60"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:shadow-xl hover:shadow-brand-secondary/10"
     >
-      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-secondary/10 text-brand-secondary">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-secondary/0 to-brand-secondary/0 transition-colors duration-300 group-hover:from-brand-secondary/[0.04] group-hover:to-brand-primary/[0.03]"
+      />
+      <div className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-secondary/10 to-brand-secondary/5 text-brand-secondary transition-transform duration-300 group-hover:scale-110">
         <Icon className="h-6 w-6" strokeWidth={1.75} />
       </div>
-      <h3 className="text-lg font-semibold text-brand-dark">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-slate-600">{description}</p>
-      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-secondary opacity-90 transition-transform group-hover:translate-x-0.5">
+      <h3 className="relative mt-5 text-lg font-semibold text-brand-dark">{title}</h3>
+      <p className="relative mt-2 text-sm leading-relaxed text-slate-600">{description}</p>
+      <span className="relative mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-secondary opacity-90 transition-transform duration-300 group-hover:translate-x-1">
         Learn more <ArrowRight className="h-4 w-4" />
       </span>
     </Link>

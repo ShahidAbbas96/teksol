@@ -1,8 +1,9 @@
 import SEO from "../components/seo/SEO";
 import Container from "../components/ui/Container";
-import SectionHeading from "../components/ui/SectionHeading";
+import Reveal from "../components/ui/Reveal";
 import FAQAccordion from "../components/sections/FAQAccordion";
 import CTASection from "../components/sections/CTASection";
+import PageHero from "../components/sections/PageHero";
 import { GENERAL_FAQS } from "../data/faqs";
 
 const FAQ_SCHEMA = {
@@ -25,17 +26,15 @@ export default function FAQPage() {
         schema={FAQ_SCHEMA}
       />
 
-      <section className="bg-brand-background py-16 sm:py-20">
-        <Container>
-          <SectionHeading as="h1" eyebrow="FAQ" title="Frequently Asked Questions" />
-        </Container>
-      </section>
+      <PageHero eyebrow="FAQ" title="Frequently Asked Questions" />
 
       <section className="bg-white py-16 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl">
-            <FAQAccordion items={GENERAL_FAQS} />
-          </div>
+          <Reveal>
+            <div className="mx-auto max-w-3xl">
+              <FAQAccordion items={GENERAL_FAQS} />
+            </div>
+          </Reveal>
         </Container>
       </section>
 

@@ -3,7 +3,7 @@ import type { CaseStudy } from "../../types";
 
 export default function CaseStudyCard({ title, industry, challenge, solution, outcome }: CaseStudy) {
   return (
-    <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7">
+    <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/60">
       <span className="mb-4 inline-flex w-fit items-center rounded-full bg-brand-primary/10 px-3 py-1 text-xs font-semibold text-brand-primary">
         {industry}
       </span>

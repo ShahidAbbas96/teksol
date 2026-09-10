@@ -22,3 +22,75 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* Faint dot-grid backdrop for hero / CTA sections */
+.bg-dot-grid {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Soft, multi-stop radial mesh used behind hero content */
+.bg-mesh {
+  background-image:
+    radial-gradient(38% 55% at 14% 8%, rgba(47, 111, 237, 0.16), transparent 60%),
+    radial-gradient(32% 45% at 88% 0%, rgba(113, 75, 103, 0.14), transparent 60%),
+    radial-gradient(45% 60% at 100% 100%, rgba(47, 111, 237, 0.1), transparent 60%);
+}
+
+.bg-mesh-dark {
+  background-image:
+    radial-gradient(42% 60% at 12% 0%, rgba(47, 111, 237, 0.28), transparent 62%),
+    radial-gradient(38% 55% at 100% 100%, rgba(113, 75, 103, 0.32), transparent 60%);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-slow 6s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-float-slow {
+  animation: float-slow 7.5s ease-in-out infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal-in {
+  animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-delayed,
+  .animate-float-slow {
+    animation: none;
+  }
+  .reveal {
+    opacity: 1;
+  }
+  .reveal-in {
+    animation: none;
+  }
+}
