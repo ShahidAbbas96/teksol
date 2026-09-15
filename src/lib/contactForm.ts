@@ -37,22 +37,21 @@ export const INITIAL_CONTACT_FORM: ContactFormValues = {
 };
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_REGEX = /^[+\d][\d\s()-]{6,}$/;
 
 export function validateContactForm(values: ContactFormValues): Partial<Record<keyof ContactFormValues, string>> {
   const errors: Partial<Record<keyof ContactFormValues, string>> = {};
 
   if (!values.fullName.trim()) errors.fullName = "Full name is required.";
   if (!values.email.trim()) {
-    errors.email = "Business email is required.";
+    errors.email = "Email is required.";
   } else if (!EMAIL_REGEX.test(values.email.trim())) {
     errors.email = "Enter a valid email address.";
   }
-  if (!values.company.trim()) errors.company = "Company name is required.";
-  if (!values.serviceRequired) errors.serviceRequired = "Please select a service.";
-  if (!values.message.trim()) {
-    errors.message = "Tell us a little about your project.";
-  } else if (values.message.trim().length < 10) {
-    errors.message = "Please provide a bit more detail (at least 10 characters).";
+  if (!values.phone.trim()) {
+    errors.phone = "Phone number is required.";
+  } else if (!PHONE_REGEX.test(values.phone.trim())) {
+    errors.phone = "Enter a valid phone number.";
   }
 
   return errors;

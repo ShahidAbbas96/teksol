@@ -16,12 +16,30 @@ import { SITE_CONFIG } from "../config/site";
 
 const HOME_SCHEMA = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ProfessionalService",
+  "@id": `${SITE_CONFIG.SEO.siteUrl}/#organization`,
   name: SITE_CONFIG.COMPANY_NAME,
   url: SITE_CONFIG.SEO.siteUrl,
+  logo: `${SITE_CONFIG.SEO.siteUrl}${SITE_CONFIG.LOGO_FULL_SRC}`,
+  image: `${SITE_CONFIG.SEO.siteUrl}${SITE_CONFIG.LOGO_FULL_SRC}`,
   email: SITE_CONFIG.EMAIL,
-  telephone: SITE_CONFIG.PHONE,
+  telephone: SITE_CONFIG.PHONE_HREF,
   description: SITE_CONFIG.SEO.defaultDescription,
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE_CONFIG.ADDRESS_LINE_1,
+    addressLocality: "Lahore",
+    addressRegion: "Punjab",
+    addressCountry: "PK",
+  },
+  areaServed: "Worldwide",
+  sameAs: Object.values(SITE_CONFIG.SOCIAL_LINKS),
+  makesOffer: [
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Odoo ERP Implementation" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Microsoft Dynamics 365 Implementation" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "ERP Consulting" } },
+  ],
 };
 
 export default function Home() {

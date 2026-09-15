@@ -6,6 +6,7 @@ import SectionHeading from "../components/ui/SectionHeading";
 import Button from "../components/ui/Button";
 import Badge from "../components/ui/Badge";
 import Reveal from "../components/ui/Reveal";
+import Breadcrumbs, { breadcrumbSchema } from "../components/ui/Breadcrumbs";
 import CTASection from "../components/sections/CTASection";
 import { INDUSTRY_DETAILS } from "../data/industries";
 import { IMPLEMENTATION_STEPS } from "../data/content";
@@ -19,16 +20,28 @@ export default function IndustryDetail() {
   }
 
   const Icon = industry.icon;
+  const breadcrumbItems = [
+    { label: "Industries", to: "/industries" },
+    { label: industry.title },
+  ];
 
   return (
     <>
-      <SEO title={industry.metaTitle} description={industry.metaDescription} path={`/industries/${industry.slug}`} />
+      <SEO
+        title={industry.metaTitle}
+        description={industry.metaDescription}
+        path={`/industries/${industry.slug}`}
+        schema={breadcrumbSchema(breadcrumbItems)}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-brand-background py-16 sm:py-20">
         <div aria-hidden className="bg-mesh pointer-events-none absolute inset-0" />
         <Container className="relative">
           <Reveal>
+            <div className="mb-6">
+              <Breadcrumbs items={breadcrumbItems} />
+            </div>
             <div className="mx-auto max-w-3xl text-center">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-primary/15 to-brand-primary/5 text-brand-primary">
                 <Icon className="h-7 w-7" strokeWidth={1.75} />

@@ -63,6 +63,8 @@ export default function SEO({ title, description, path = "/", schema }: SEOProps
 
     if (schema) {
       setJsonLd("page-schema", schema);
+    } else {
+      document.head.querySelector('script[data-schema-id="page-schema"]')?.remove();
     }
   }, [title, description, path, schema]);
 

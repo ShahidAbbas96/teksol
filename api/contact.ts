@@ -43,7 +43,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     message,
   } = body ?? {};
 
-  if (!fullName?.trim() || !email?.trim() || !company?.trim() || !serviceRequired?.trim() || !message?.trim()) {
+  if (!fullName?.trim() || !email?.trim() || !phone?.trim()) {
     res.status(400).json({ error: "Missing required fields." });
     return;
   }
@@ -73,23 +73,25 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const summaryLines = [
     `Name: ${fullName}`,
     `Email: ${email}`,
-    `Phone: ${phone || "-"}`,
-    `Company: ${company}`,
+    `Phone: ${phone}`,
+    `Company: ${company || "-"}`,
     `Industry: ${industry || "-"}`,
     `Number of Employees: ${employees || "-"}`,
     `Current ERP / Software: ${currentSoftware || "-"}`,
-    `Service Required: ${serviceRequired}`,
+    `Service Required: ${serviceRequired || "-"}`,
     "",
     "Message:",
-    message,
+    message?.trim() || "(no message provided)",
   ];
+
+  const subjectSuffix = company?.trim() ? ` (${company.trim()})` : "";
 
   try {
     await transporter.sendMail({
       from: `"TechSols Website" <${smtpUser}>`,
       to: notifyTo,
       replyTo: email,
-      subject: `New ERP consultation request from ${fullName} (${company})`,
+      subject: `New ERP consultation request from ${fullName}${subjectSuffix}`,
       text: summaryLines.join("\n"),
     });
     res.status(200).json({ success: true });

@@ -23,6 +23,11 @@ export const SITE_CONFIG = {
   PHONE_HREF: "+923156589133",
   PHONE_SECONDARY: "0306 6073940",
   PHONE_SECONDARY_HREF: "+923066073940",
+
+  /** Number WhatsApp messages are sent to — digits only, with country code, no + or spaces. */
+  WHATSAPP_NUMBER: "923156589133",
+  WHATSAPP_DEFAULT_MESSAGE: "Hi TechSols, I'd like to know more about your ERP implementation services.",
+
   ADDRESS_LINE_1: "Office # 24, M2 Eden Tower",
   ADDRESS_LINE_2: "Main Gulberg, Lahore, Pakistan",
   BUSINESS_HOURS: "Monday – Saturday, 9:00 AM – 6:00 PM (PKT)",

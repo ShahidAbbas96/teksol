@@ -86,7 +86,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="email" className={labelClasses}>
-            Business Email *
+            Email *
           </label>
           <input
             id="email"
@@ -101,7 +101,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="phone" className={labelClasses}>
-            Phone Number
+            Phone Number *
           </label>
           <input
             id="phone"
@@ -109,13 +109,14 @@ export default function ContactForm() {
             className={inputClasses}
             value={values.phone}
             onChange={(e) => updateField("phone", e.target.value)}
-            placeholder="+1 (555) 123-4567"
+            placeholder="+92 300 1234567"
           />
+          {errors.phone ? <p className={errorClasses}>{errors.phone}</p> : null}
         </div>
 
         <div>
           <label htmlFor="company" className={labelClasses}>
-            Company Name *
+            Company Name
           </label>
           <input
             id="company"
@@ -125,7 +126,6 @@ export default function ContactForm() {
             onChange={(e) => updateField("company", e.target.value)}
             placeholder="Your Company Inc."
           />
-          {errors.company ? <p className={errorClasses}>{errors.company}</p> : null}
         </div>
 
         <div>
@@ -183,7 +183,7 @@ export default function ContactForm() {
 
         <div className="sm:col-span-2">
           <label htmlFor="serviceRequired" className={labelClasses}>
-            Services Required *
+            Services Required
           </label>
           <select
             id="serviceRequired"
@@ -198,12 +198,11 @@ export default function ContactForm() {
               </option>
             ))}
           </select>
-          {errors.serviceRequired ? <p className={errorClasses}>{errors.serviceRequired}</p> : null}
         </div>
 
         <div className="sm:col-span-2">
           <label htmlFor="message" className={labelClasses}>
-            Message *
+            Message
           </label>
           <textarea
             id="message"
@@ -213,7 +212,6 @@ export default function ContactForm() {
             onChange={(e) => updateField("message", e.target.value)}
             placeholder="Tell us about your business processes, goals, and challenges."
           />
-          {errors.message ? <p className={errorClasses}>{errors.message}</p> : null}
         </div>
       </div>
 
