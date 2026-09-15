@@ -17,13 +17,15 @@ export const SITE_CONFIG = {
   /** Icon + wordmark + tagline (transparent) — for larger brand placements. */
   LOGO_FULL_SRC: "/logo-full.png",
 
-  EMAIL: "hello@techsols.net",
-  SUPPORT_EMAIL: "support@techsols.net",
-  PHONE: "+1 (555) 123-4567",
-  PHONE_HREF: "+15551234567",
-  ADDRESS_LINE_1: "123 Business Avenue, Suite 400",
-  ADDRESS_LINE_2: "Austin, TX 78701, United States",
-  BUSINESS_HOURS: "Monday – Friday, 9:00 AM – 6:00 PM (CST)",
+  EMAIL: "sales@techsols.net",
+  SUPPORT_EMAIL: "sales@techsols.net",
+  PHONE: "0315 6589133",
+  PHONE_HREF: "+923156589133",
+  PHONE_SECONDARY: "0306 6073940",
+  PHONE_SECONDARY_HREF: "+923066073940",
+  ADDRESS_LINE_1: "Office # 24, M2 Eden Tower",
+  ADDRESS_LINE_2: "Main Gulberg, Lahore, Pakistan",
+  BUSINESS_HOURS: "Monday – Saturday, 9:00 AM – 6:00 PM (PKT)",
 
   SOCIAL_LINKS: {
     linkedin: "https://linkedin.com/company/techsols",
@@ -36,9 +38,9 @@ export const SITE_CONFIG = {
 
   SEO: {
     siteUrl: "https://techsols.net",
-    defaultTitle: "Odoo ERP Implementation & Consulting | TechSols",
+    defaultTitle: "Odoo & Dynamics 365 ERP Implementation | TechSols",
     defaultDescription:
-      "TechSols helps businesses implement, customize, integrate, and optimize Odoo ERP solutions for smarter, connected business operations.",
+      "TechSols helps businesses implement, customize, integrate, and optimize Odoo ERP and Microsoft Dynamics 365 solutions for smarter, connected business operations.",
     ogImage: "/logo-full.png",
   },
 } as const;

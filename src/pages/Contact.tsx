@@ -10,6 +10,12 @@ const CONTACT_DETAILS = [
   { icon: Mail, label: "Email", value: SITE_CONFIG.EMAIL, href: `mailto:${SITE_CONFIG.EMAIL}` },
   { icon: Phone, label: "Phone", value: SITE_CONFIG.PHONE, href: `tel:${SITE_CONFIG.PHONE_HREF}` },
   {
+    icon: Phone,
+    label: "Phone (Alt)",
+    value: SITE_CONFIG.PHONE_SECONDARY,
+    href: `tel:${SITE_CONFIG.PHONE_SECONDARY_HREF}`,
+  },
+  {
     icon: MapPin,
     label: "Office Location",
     value: `${SITE_CONFIG.ADDRESS_LINE_1}, ${SITE_CONFIG.ADDRESS_LINE_2}`,
@@ -68,10 +74,6 @@ export default function Contact() {
                     </div>
                   ))}
                 </div>
-
-                <p className="relative mt-8 text-xs leading-relaxed text-slate-400">
-                  Contact details shown are placeholders and will be updated with final business information.
-                </p>
               </div>
             </Reveal>
           </div>

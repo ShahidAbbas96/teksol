@@ -31,6 +31,7 @@ const COLUMNS: { heading: string; links: { label: string; to: string }[] }[] = [
     heading: "Services",
     links: [
       { label: "ERP Consulting", to: "/services/erp-consulting" },
+      { label: "Dynamics 365 Implementation", to: "/services/dynamics-365-implementation" },
       { label: "Business Automation", to: "/services/odoo-implementation" },
       { label: "Custom Development", to: "/services/odoo-development" },
       { label: "System Integration", to: "/services/odoo-integration" },
@@ -65,6 +66,12 @@ export default function Footer() {
               </a>
               <a href={`tel:${SITE_CONFIG.PHONE_HREF}`} className="flex items-center gap-2.5 text-slate-400 hover:text-white">
                 <Phone className="h-4 w-4 shrink-0" /> {SITE_CONFIG.PHONE}
+              </a>
+              <a
+                href={`tel:${SITE_CONFIG.PHONE_SECONDARY_HREF}`}
+                className="flex items-center gap-2.5 text-slate-400 hover:text-white"
+              >
+                <Phone className="h-4 w-4 shrink-0" /> {SITE_CONFIG.PHONE_SECONDARY}
               </a>
               <div className="flex items-start gap-2.5 text-slate-400">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />

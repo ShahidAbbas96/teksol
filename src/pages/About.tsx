@@ -53,7 +53,7 @@ export default function About() {
                 align="left"
                 eyebrow="Who We Are"
                 title="ERP Specialists, Not a General Software Shop"
-                description={`${SITE_CONFIG.COMPANY_NAME} is focused specifically on Odoo ERP — implementation, customization, development, integration, migration, and support. That focus lets us go deep on one platform instead of spreading thin across every technology.`}
+                description={`${SITE_CONFIG.COMPANY_NAME} is focused specifically on ERP — Odoo and Microsoft Dynamics 365 implementation, customization, development, integration, migration, and support. That focus lets us go deep on the platforms that matter instead of spreading thin across every technology.`}
               />
               <SectionHeading
                 align="left"
@@ -88,22 +88,22 @@ export default function About() {
         </Container>
       </section>
 
-      {/* Why Odoo + Technology expertise */}
+      {/* Why Odoo & Dynamics 365 + Technology expertise */}
       <section className="bg-white py-20 sm:py-24">
         <Container>
           <Reveal>
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
               <SectionHeading
                 align="left"
-                eyebrow="Why Odoo"
-                title="A Platform That Scales With You"
-                description="We chose to specialize in Odoo because of its modular architecture, breadth of native applications, and open ecosystem — letting businesses start small and expand without switching platforms as they grow."
+                eyebrow="Why Odoo & Dynamics 365"
+                title="Two Platforms That Scale With You"
+                description="We work with Odoo and Microsoft Dynamics 365 because both are modular, widely adopted ERP platforms — letting businesses start with what they need and expand without switching platforms as they grow. Which one fits depends on your business, not ours."
               />
               <SectionHeading
                 align="left"
                 eyebrow="Our Expertise"
                 title="Configuration, Development, and Integration"
-                description="Our team combines functional ERP consulting with hands-on Odoo development — configuring standard workflows where they fit, and building custom functionality and integrations where they don't."
+                description="Our team combines functional ERP consulting with hands-on Odoo and Dynamics 365 development — configuring standard workflows where they fit, and building custom functionality and integrations where they don't."
               />
             </div>
           </Reveal>

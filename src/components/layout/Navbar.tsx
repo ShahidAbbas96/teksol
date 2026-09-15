@@ -18,6 +18,7 @@ const ODOO_LINKS = [
 
 const SERVICES_LINKS = [
   { label: "ERP Consulting", to: "/services/erp-consulting" },
+  { label: "Dynamics 365 Implementation", to: "/services/dynamics-365-implementation" },
   { label: "Business Process Automation", to: "/services/odoo-implementation" },
   { label: "Custom Software Development", to: "/services/odoo-development" },
   { label: "System Integration", to: "/services/odoo-integration" },

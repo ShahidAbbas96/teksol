@@ -109,9 +109,9 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "retail",
     title: "Retail",
     icon: Store,
-    metaTitle: "Odoo ERP for Retail | TechSols",
+    metaTitle: "Retail ERP Implementation | Odoo for Retail | TechSols",
     metaDescription:
-      "Odoo ERP for retail businesses — connect POS, inventory, purchasing, accounting, and multi-store operations in one system.",
+      "Retail ERP implementation with Odoo — connect POS, inventory, purchasing, accounting, and multi-store operations in one system.",
     heroHeadline: "Odoo ERP for Retail",
     heroSubheadline: "Connect POS, inventory, purchasing, accounting, and multi-store operations.",
     challenges: [

@@ -19,6 +19,7 @@ export const SERVICE_OPTIONS = [
   "Odoo Integration",
   "Odoo Migration",
   "Odoo Support",
+  "Dynamics 365 Implementation",
   "ERP Consulting",
   "Other",
 ];
@@ -57,13 +58,16 @@ export function validateContactForm(values: ContactFormValues): Partial<Record<k
   return errors;
 }
 
-/**
- * Placeholder submission handler. Replace with a real API call (e.g. to a
- * CRM, email service, or backend endpoint) when one is available.
- */
 export async function submitContactForm(values: ContactFormValues): Promise<{ success: true }> {
-  await new Promise((resolve) => setTimeout(resolve, 900));
-  // eslint-disable-next-line no-console
-  console.info("Contact form submission (placeholder — wire up a real endpoint):", values);
+  const response = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(values),
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to submit contact form");
+  }
+
   return { success: true };
 }

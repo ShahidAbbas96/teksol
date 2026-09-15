@@ -11,8 +11,8 @@ export default function ServicesSection() {
         <Reveal>
           <SectionHeading
             eyebrow="What We Do"
-            title="Our Odoo & ERP Services"
-            description="From first consultation to long-term support, we cover every stage of your Odoo ERP journey."
+            title="Our Odoo & Dynamics 365 ERP Services"
+            description="From first consultation to long-term support, we cover every stage of your Odoo or Dynamics 365 ERP journey."
           />
         </Reveal>
         <Reveal delay={100}>

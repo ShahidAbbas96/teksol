@@ -7,16 +7,23 @@ import {
   LifeBuoy,
   Compass,
   GraduationCap,
+  Cloud,
 } from "lucide-react";
 import type { ServiceDetail, ServiceSummary } from "../types";
 
-/** Services section on the homepage (8 cards). */
+/** Services section on the homepage. */
 export const SERVICES_SUMMARY: ServiceSummary[] = [
   {
     slug: "odoo-implementation",
     icon: Rocket,
     title: "Odoo Implementation",
     description: "End-to-end Odoo implementation tailored to your business processes.",
+  },
+  {
+    slug: "dynamics-365-implementation",
+    icon: Cloud,
+    title: "Dynamics 365 Implementation",
+    description: "Implement, customize, and integrate Microsoft Dynamics 365 across finance, sales, and operations.",
   },
   {
     slug: "odoo-customization",
@@ -479,6 +486,76 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
         question: "How much does Odoo implementation cost?",
         answer:
           "Cost depends on scope — number of modules, users, customizations, integrations, and data migration complexity. We provide a project estimate after an initial consultation.",
+      },
+    ],
+  },
+
+  "dynamics-365-implementation": {
+    slug: "dynamics-365-implementation",
+    title: "Microsoft Dynamics 365 Implementation",
+    shortTitle: "Dynamics 365",
+    icon: Cloud,
+    metaTitle: "Microsoft Dynamics 365 Implementation Services | TechSols",
+    metaDescription:
+      "TechSols provides Microsoft Dynamics 365 implementation, customization, and integration services — Business Central, Finance & Operations, and the Power Platform.",
+    heroHeadline: "Microsoft Dynamics 365 Implementation Built Around Your Business",
+    heroSubheadline:
+      "We help businesses implement, customize, and integrate Microsoft Dynamics 365 — from Business Central to Finance & Operations — so every department runs on one connected platform.",
+    problem: {
+      heading: "Dynamics 365 only delivers value when it's configured right",
+      points: [
+        "Standard configuration that doesn't reflect real approval chains or reporting needs",
+        "Modules rolled out without a clear data migration or integration plan",
+        "Teams left undertrained on a platform built for far more than they're using",
+        "Customizations bolted on without a long-term upgrade strategy",
+      ],
+    },
+    solution: {
+      heading: "Implementation grounded in your business processes",
+      body: "We start with your sales, finance, operations, and service processes before configuring a single Dynamics 365 module, so the system mirrors how your business actually runs instead of forcing a generic template on it.",
+    },
+    included: [
+      "Business process discovery and requirements workshops",
+      "Dynamics 365 module selection and licensing guidance",
+      "Business Central and Finance & Operations configuration",
+      "Data migration from legacy systems",
+      "Power Platform automation with Power Automate and Power BI",
+      "User acceptance testing before go-live",
+      "Administrator and end-user training",
+      "Go-live support and post-launch monitoring",
+    ],
+    process: [
+      { step: "01", title: "Discover", description: "Understand business processes, requirements, challenges, and goals." },
+      { step: "02", title: "Design", description: "Design the ERP architecture and workflows around your operations." },
+      { step: "03", title: "Configure", description: "Configure Dynamics 365 modules according to business requirements." },
+      { step: "04", title: "Customize & Integrate", description: "Develop custom features and integrations where required." },
+      { step: "05", title: "Launch & Support", description: "Deploy, train users, monitor the system, and provide ongoing support." },
+    ],
+    benefits: [
+      "A system configured around your actual processes, not generic defaults",
+      "Finance, sales, and operations connected on one Microsoft platform",
+      "Built-in reporting and Power BI analytics from day one",
+      "A clear, phased rollout instead of a disruptive big-bang switch",
+    ],
+    faqs: [
+      {
+        question: "Is Dynamics 365 different from Dynamics GP or NAV?",
+        answer:
+          "Yes. Dynamics 365 is Microsoft's current cloud ERP and CRM suite, replacing legacy products like Dynamics GP, NAV, and AX. We work with the current Dynamics 365 applications, including Business Central and Finance & Operations.",
+      },
+      {
+        question: "Can you migrate our data from another ERP into Dynamics 365?",
+        answer:
+          "Yes. We migrate data from spreadsheets, legacy ERPs, and other platforms into Dynamics 365 using a structured mapping, cleansing, and validation process.",
+      },
+      {
+        question: "Do you provide training on Dynamics 365?",
+        answer: "Yes, administrator and end-user training is included in every Dynamics 365 implementation.",
+      },
+      {
+        question: "Do you also work with Odoo, or only Dynamics 365?",
+        answer:
+          "We implement both. If you're comparing platforms, our ERP Consulting service can help you decide which one — Odoo or Dynamics 365 — fits your business before you commit to either.",
       },
     ],
   },

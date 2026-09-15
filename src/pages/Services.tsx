@@ -10,15 +10,15 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Odoo & ERP Services | TechSols"
-        description="Explore our full range of Odoo ERP services — implementation, customization, development, integration, migration, support, consulting, and training."
+        title="Odoo & Dynamics 365 ERP Services | TechSols"
+        description="Explore our full range of Odoo and Microsoft Dynamics 365 ERP services — implementation, customization, development, integration, migration, support, consulting, and training."
         path="/services"
       />
 
       <PageHero
         eyebrow="Services"
-        title="Our Odoo & ERP Services"
-        description="From first ERP consultation through long-term support, we cover every stage of your Odoo journey."
+        title="Our Odoo & Dynamics 365 ERP Services"
+        description="From first ERP consultation through long-term support, we cover every stage of your Odoo or Dynamics 365 journey."
       />
 
       <section className="bg-white py-16 sm:py-20">
