@@ -43,8 +43,8 @@ export default function Solutions() {
   return (
     <>
       <SEO
-        title="ERP Solutions | TekSol"
-        description="Explore TekSol's solutions — ERP consulting, Odoo modules, industry-specific ERP, business process automation, and custom ERP development."
+        title="ERP Solutions | TechSols"
+        description="Explore TechSols' solutions — ERP consulting, Odoo modules, industry-specific ERP, business process automation, and custom ERP development."
         path="/solutions"
       />
 

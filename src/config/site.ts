@@ -5,10 +5,10 @@
  */
 
 export const SITE_CONFIG = {
-  COMPANY_NAME: "TekSol",
-  COMPANY_LEGAL_NAME: "TekSol LLC",
+  COMPANY_NAME: "TechSols",
+  COMPANY_LEGAL_NAME: "TechSols LLC",
   TAGLINE: "Smarter ERP. Stronger Business.",
-  LOGO_TEXT: "TekSol",
+  LOGO_TEXT: "TechSols",
 
   /** Icon mark only (transparent) — square, good for badges and favicons. */
   LOGO_ICON_SRC: "/logo-icon.png",
@@ -17,8 +17,8 @@ export const SITE_CONFIG = {
   /** Icon + wordmark + tagline (transparent) — for larger brand placements. */
   LOGO_FULL_SRC: "/logo-full.png",
 
-  EMAIL: "hello@teksol.example",
-  SUPPORT_EMAIL: "support@teksol.example",
+  EMAIL: "hello@techsols.net",
+  SUPPORT_EMAIL: "support@techsols.net",
   PHONE: "+1 (555) 123-4567",
   PHONE_HREF: "+15551234567",
   ADDRESS_LINE_1: "123 Business Avenue, Suite 400",
@@ -26,19 +26,19 @@ export const SITE_CONFIG = {
   BUSINESS_HOURS: "Monday – Friday, 9:00 AM – 6:00 PM (CST)",
 
   SOCIAL_LINKS: {
-    linkedin: "https://linkedin.com/company/teksol",
-    facebook: "https://facebook.com/teksol",
-    instagram: "https://instagram.com/teksol",
-    youtube: "https://youtube.com/@teksol",
+    linkedin: "https://linkedin.com/company/techsols",
+    facebook: "https://facebook.com/techsols",
+    instagram: "https://instagram.com/techsols",
+    youtube: "https://youtube.com/@techsols",
   },
 
   CALENDLY_URL: "#book-consultation",
 
   SEO: {
-    siteUrl: "https://www.teksol.example",
-    defaultTitle: "Odoo ERP Implementation & Consulting | TekSol",
+    siteUrl: "https://techsols.net",
+    defaultTitle: "Odoo ERP Implementation & Consulting | TechSols",
     defaultDescription:
-      "TekSol helps businesses implement, customize, integrate, and optimize Odoo ERP solutions for smarter, connected business operations.",
+      "TechSols helps businesses implement, customize, integrate, and optimize Odoo ERP solutions for smarter, connected business operations.",
     ogImage: "/logo-full.png",
   },
 } as const;

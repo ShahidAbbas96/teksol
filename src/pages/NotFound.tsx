@@ -6,7 +6,7 @@ import Button from "../components/ui/Button";
 export default function NotFound() {
   return (
     <>
-      <SEO title="Page Not Found | TekSol" description="The page you're looking for doesn't exist." path="/404" />
+      <SEO title="Page Not Found | TechSols" description="The page you're looking for doesn't exist." path="/404" />
       <section className="flex min-h-[70vh] items-center bg-brand-background py-20">
         <Container>
           <div className="mx-auto flex max-w-lg flex-col items-center text-center">

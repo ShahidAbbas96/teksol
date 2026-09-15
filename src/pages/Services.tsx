@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Odoo & ERP Services | TekSol"
+        title="Odoo & ERP Services | TechSols"
         description="Explore our full range of Odoo ERP services — implementation, customization, development, integration, migration, support, consulting, and training."
         path="/services"
       />

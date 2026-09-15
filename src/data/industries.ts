@@ -82,7 +82,7 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "manufacturing",
     title: "Manufacturing",
     icon: Factory,
-    metaTitle: "Odoo ERP for Manufacturing | TekSol",
+    metaTitle: "Odoo ERP for Manufacturing | TechSols",
     metaDescription:
       "Odoo ERP solutions for manufacturers — production planning, bills of materials, inventory, quality, and procurement in one platform.",
     heroHeadline: "Odoo ERP for Manufacturing",
@@ -109,7 +109,7 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "retail",
     title: "Retail",
     icon: Store,
-    metaTitle: "Odoo ERP for Retail | TekSol",
+    metaTitle: "Odoo ERP for Retail | TechSols",
     metaDescription:
       "Odoo ERP for retail businesses — connect POS, inventory, purchasing, accounting, and multi-store operations in one system.",
     heroHeadline: "Odoo ERP for Retail",
@@ -135,7 +135,7 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "wholesale",
     title: "Wholesale & Distribution",
     icon: Truck,
-    metaTitle: "Odoo ERP for Wholesale & Distribution | TekSol",
+    metaTitle: "Odoo ERP for Wholesale & Distribution | TechSols",
     metaDescription:
       "Odoo ERP for wholesalers and distributors — bulk ordering, warehousing, logistics, and distributor pricing in one platform.",
     heroHeadline: "Odoo ERP for Wholesale & Distribution",
@@ -161,7 +161,7 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "ecommerce",
     title: "E-commerce",
     icon: ShoppingCart,
-    metaTitle: "Odoo ERP for E-commerce | TekSol",
+    metaTitle: "Odoo ERP for E-commerce | TechSols",
     metaDescription:
       "Odoo ERP for e-commerce businesses — sync online storefronts with inventory, fulfillment, and accounting in real time.",
     heroHeadline: "Odoo ERP for E-commerce",
@@ -187,7 +187,7 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "healthcare",
     title: "Healthcare",
     icon: HeartPulse,
-    metaTitle: "Odoo ERP for Healthcare Organizations | TekSol",
+    metaTitle: "Odoo ERP for Healthcare Organizations | TechSols",
     metaDescription:
       "Odoo ERP for healthcare organizations — coordinate scheduling, inventory, billing, and administration across facilities.",
     heroHeadline: "Odoo ERP for Healthcare Organizations",
@@ -213,7 +213,7 @@ export const INDUSTRY_DETAILS: Record<string, IndustryDetail> = {
     slug: "services",
     title: "Professional Services",
     icon: Briefcase,
-    metaTitle: "Odoo ERP for Professional Services | TekSol",
+    metaTitle: "Odoo ERP for Professional Services | TechSols",
     metaDescription:
       "Odoo ERP for service companies — manage projects, timesheets, billing, and client relationships in one place.",
     heroHeadline: "Odoo ERP for Professional Services",

@@ -10,7 +10,7 @@ export default function Industries() {
   return (
     <>
       <SEO
-        title="Odoo ERP Solutions by Industry | TekSol"
+        title="Odoo ERP Solutions by Industry | TechSols"
         description="See how Odoo ERP supports manufacturing, retail, wholesale, e-commerce, healthcare, and professional services businesses."
         path="/industries"
       />

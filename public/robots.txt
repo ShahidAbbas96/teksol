@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.teksol.example/sitemap.xml
+Sitemap: https://techsols.net/sitemap.xml

@@ -18,8 +18,8 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us | TekSol"
-        description="TekSol is an ERP-focused technology company helping businesses implement, customize, and extend Odoo ERP."
+        title="About Us | TechSols"
+        description="TechSols is an ERP-focused technology company helping businesses implement, customize, and extend Odoo ERP."
         path="/about"
       />
 

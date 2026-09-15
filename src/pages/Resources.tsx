@@ -32,7 +32,7 @@ export default function Resources() {
   return (
     <>
       <SEO
-        title="Resources | TekSol"
+        title="Resources | TechSols"
         description="Guides, FAQs, and example projects to help you plan your Odoo ERP implementation."
         path="/resources"
       />

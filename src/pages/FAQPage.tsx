@@ -20,7 +20,7 @@ export default function FAQPage() {
   return (
     <>
       <SEO
-        title="Odoo ERP FAQ | TekSol"
+        title="Odoo ERP FAQ | TechSols"
         description="Answers to frequently asked questions about Odoo ERP implementation, customization, cost, timelines, and support."
         path="/faq"
         schema={FAQ_SCHEMA}
