@@ -105,8 +105,8 @@ export default function Navbar() {
                   key={link.label}
                   to={link.to}
                   className={({ isActive }) =>
-                    `rounded-md px-3.5 py-2 text-sm font-medium transition-colors hover:text-brand-secondary ${
-                      isActive ? "text-brand-secondary" : "text-slate-700"
+                    `relative rounded-md px-3.5 py-2 text-sm font-medium transition-colors hover:text-brand-secondary after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-center after:scale-x-0 after:rounded-full after:bg-brand-secondary after:transition-transform after:duration-200 ${
+                      isActive ? "text-brand-secondary after:scale-x-100" : "text-slate-700"
                     }`
                   }
                 >

@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WhatsAppButton from "../ui/WhatsAppButton";
+import MobileCTABar from "../ui/MobileCTABar";
+import BackToTop from "../ui/BackToTop";
 
 export default function Layout() {
   return (
@@ -18,6 +20,8 @@ export default function Layout() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <BackToTop />
+      <MobileCTABar />
     </div>
   );
 }
