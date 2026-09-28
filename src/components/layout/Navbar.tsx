@@ -31,6 +31,7 @@ const NAV_LINKS = [
   { label: "Odoo", to: "/odoo", dropdown: ODOO_LINKS },
   { label: "Services", to: "/services", dropdown: SERVICES_LINKS },
   { label: "Industries", to: "/industries" },
+  { label: "Portfolio", to: "/portfolio" },
   { label: "Solutions", to: "/solutions" },
   { label: "About", to: "/about" },
   { label: "Resources", to: "/resources" },

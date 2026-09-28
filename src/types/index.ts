@@ -66,9 +66,14 @@ export interface CaseStudy {
   slug: string;
   title: string;
   industry: string;
+  /** Matches an IndustryDetail slug, if that industry has its own page — used to cross-link. */
+  industrySlug?: string;
   challenge: string;
   solution: string;
   outcome: string;
+  modules: string[];
+  /** Shown in the homepage teaser grid; the full list always appears on /portfolio. */
+  featured?: boolean;
 }
 
 export interface ProcessStep {

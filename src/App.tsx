@@ -8,6 +8,7 @@ import ServiceDetail from "./pages/ServiceDetail";
 import Industries from "./pages/Industries";
 import IndustryDetail from "./pages/IndustryDetail";
 import Solutions from "./pages/Solutions";
+import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="industries" element={<Industries />} />
           <Route path="industries/:slug" element={<IndustryDetail />} />
           <Route path="solutions" element={<Solutions />} />
+          <Route path="portfolio" element={<Portfolio />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resources" element={<Resources />} />

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import SEO from "../components/seo/SEO";
 import Container from "../components/ui/Container";
 import Reveal from "../components/ui/Reveal";
-import CaseStudiesSection from "../components/sections/CaseStudiesSection";
 import CTASection from "../components/sections/CTASection";
 import PageHero from "../components/sections/PageHero";
 
@@ -12,7 +11,7 @@ const RESOURCE_LINKS = [
     icon: LayoutGrid,
     title: "Example ERP Projects",
     description: "See the type of Odoo ERP projects we take on, from single-store retail to multi-branch operations.",
-    to: "#projects",
+    to: "/portfolio",
   },
   {
     icon: HelpCircle,
@@ -67,10 +66,6 @@ export default function Resources() {
           </Reveal>
         </Container>
       </section>
-
-      <div id="projects">
-        <CaseStudiesSection />
-      </div>
 
       <CTASection />
     </>

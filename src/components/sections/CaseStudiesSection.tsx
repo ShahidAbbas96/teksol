@@ -1,11 +1,14 @@
-import { Info } from "lucide-react";
+import { ArrowRight, Info } from "lucide-react";
 import Container from "../ui/Container";
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
+import Button from "../ui/Button";
 import CaseStudyCard from "../cards/CaseStudyCard";
 import { CASE_STUDIES } from "../../data/caseStudies";
 
 export default function CaseStudiesSection() {
+  const featured = CASE_STUDIES.filter((study) => study.featured);
+
   return (
     <section className="bg-brand-background py-20 sm:py-24">
       <Container>
@@ -24,11 +27,17 @@ export default function CaseStudiesSection() {
 
         <Reveal delay={100}>
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {CASE_STUDIES.map((study) => (
+            {featured.map((study) => (
               <CaseStudyCard key={study.slug} {...study} />
             ))}
           </div>
         </Reveal>
+
+        <div className="mt-10 flex justify-center">
+          <Button to="/portfolio" variant="outline" size="lg" icon={<ArrowRight className="h-5 w-5" />}>
+            View Full Portfolio
+          </Button>
+        </div>
       </Container>
     </section>
   );
