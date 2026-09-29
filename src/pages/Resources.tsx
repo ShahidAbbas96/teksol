@@ -9,7 +9,7 @@ import PageHero from "../components/sections/PageHero";
 const RESOURCE_LINKS = [
   {
     icon: LayoutGrid,
-    title: "Example ERP Projects",
+    title: "Our Portfolio",
     description: "See the type of Odoo ERP projects we take on, from single-store retail to multi-branch operations.",
     to: "/portfolio",
   },

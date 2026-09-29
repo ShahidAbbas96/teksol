@@ -21,15 +21,15 @@ export default function CaseStudyCard({ title, industry, industrySlug, challenge
 
       <dl className="mt-5 space-y-4 text-sm">
         <div>
-          <dt className="font-semibold text-slate-500">Challenge</dt>
+          <dt className="font-semibold text-slate-500">The Problem</dt>
           <dd className="mt-1 leading-relaxed text-slate-600">{challenge}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-slate-500">Solution</dt>
+          <dt className="font-semibold text-slate-500">Our Approach</dt>
           <dd className="mt-1 leading-relaxed text-slate-600">{solution}</dd>
         </div>
         <div>
-          <dt className="font-semibold text-slate-500">Outcome</dt>
+          <dt className="font-semibold text-slate-500">The Result</dt>
           <dd className="mt-1 leading-relaxed text-slate-600">{outcome}</dd>
         </div>
       </dl>
@@ -44,9 +44,12 @@ export default function CaseStudyCard({ title, industry, industrySlug, challenge
         </div>
       ) : null}
 
-      <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-secondary">
-        Example project <ArrowRight className="h-4 w-4" />
-      </span>
+      <Link
+        to="/contact"
+        className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-secondary hover:underline"
+      >
+        Discuss a project like this <ArrowRight className="h-4 w-4" />
+      </Link>
     </div>
   );
 }

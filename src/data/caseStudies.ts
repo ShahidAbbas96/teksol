@@ -1,9 +1,11 @@
 import type { CaseStudy } from "../types";
 
 /**
- * Example / illustrative projects, clearly labeled as such until real
- * client case studies are available to publish. `featured` entries appear
- * in the homepage teaser; the full list appears on /portfolio.
+ * Capability scenarios: common, real industry problems and exactly how we'd
+ * solve them in Odoo — written in general "here's the pattern" language
+ * rather than as a specific past client story, since TechSols is a new
+ * practice with no completed engagements to publish yet. `featured` entries
+ * appear in the homepage teaser; the full list appears on /portfolio.
  */
 export const CASE_STUDIES: CaseStudy[] = [
   {
@@ -12,10 +14,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "Retail",
     industrySlug: "retail",
     challenge:
-      "Multiple stores were struggling with inventory visibility and centralized management, relying on spreadsheets to reconcile stock between locations.",
+      "Multi-branch retailers often lose visibility into stock the moment they open a second location — spreadsheets can't keep pace with reconciling inventory across stores in real time.",
     solution:
-      "An Odoo-based inventory, POS, purchasing, sales, and reporting workflow connecting every store to a single, centralized system.",
-    outcome: "Centralized business operations and improved visibility across all store locations.",
+      "We connect POS, inventory, purchasing, sales, and reporting into one Odoo system, so every store runs on the same live data.",
+    outcome: "One centralized view of the business, with inventory and sales visible across every location in real time.",
     modules: ["Point of Sale", "Inventory", "Purchase", "Sales", "Accounting"],
     featured: true,
   },
@@ -25,9 +27,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "Manufacturing",
     industrySlug: "manufacturing",
     challenge:
-      "Production planning, bills of materials, and inventory were managed across disconnected spreadsheets, making shop-floor visibility difficult.",
+      "Manufacturers frequently run production planning, bills of materials, and inventory across disconnected spreadsheets, leaving shop-floor visibility to guesswork.",
     solution:
-      "Odoo Manufacturing, Inventory, and Purchase configured together to connect production planning with real-time stock and procurement.",
+      "We configure Odoo Manufacturing, Inventory, and Purchase together so production planning runs on real-time stock and procurement data.",
     outcome: "A single connected view from raw materials to finished goods, replacing manual tracking.",
     modules: ["Manufacturing", "Inventory", "Purchase", "Quality"],
     featured: true,
@@ -38,10 +40,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "Wholesale & Distribution",
     industrySlug: "wholesale",
     challenge:
-      "Tiered customer pricing and warehouse operations were managed manually, slowing down order processing at scale.",
+      "Distributors managing tiered customer pricing and warehouse operations by hand typically see order processing slow down as volume grows.",
     solution:
-      "Odoo Sales, Inventory, and Accounting configured with automated pricing rules and warehouse workflows.",
-    outcome: "Faster order-to-delivery cycles with pricing and stock managed from one system.",
+      "We configure Odoo Sales, Inventory, and Accounting with automated pricing rules and structured warehouse workflows.",
+    outcome: "Faster order-to-delivery cycles, with pricing and stock managed from one system.",
     modules: ["Sales", "Inventory", "Purchase", "Accounting"],
     featured: true,
   },
@@ -51,9 +53,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "Healthcare",
     industrySlug: "healthcare",
     challenge:
-      "Staff scheduling, medical supply inventory, and billing were handled across separate tools, with no shared view across facilities.",
+      "Healthcare organizations running scheduling, medical supply inventory, and billing across separate tools rarely have one shared view across facilities.",
     solution:
-      "Odoo Inventory, Accounting, Employees, and Planning configured to give administrators one system for scheduling, supply tracking, and billing.",
+      "We configure Odoo Inventory, Accounting, Employees, and Planning to give administrators one system for scheduling, supply tracking, and billing.",
     outcome: "A connected, auditable view of operations across every facility.",
     modules: ["Inventory", "Accounting", "Employees", "Planning"],
     featured: false,
@@ -64,9 +66,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "Professional Services",
     industrySlug: "services",
     challenge:
-      "Project profitability was hard to track in real time, with timesheets, billing, and client records spread across separate tools.",
+      "Service firms tracking project profitability across separate timesheet, billing, and CRM tools usually can't see margins slipping until it's too late to act.",
     solution:
-      "Odoo CRM, Project, Sales, and Accounting connected so timesheets flow directly into client invoices and project budgets.",
+      "We connect Odoo CRM, Project, Sales, and Accounting so timesheets flow directly into client invoices and project budgets.",
     outcome: "A clear, real-time view of project profitability and client relationships.",
     modules: ["CRM", "Project", "Sales", "Accounting"],
     featured: false,
@@ -77,9 +79,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "E-commerce",
     industrySlug: "ecommerce",
     challenge:
-      "Online orders didn't sync automatically with inventory, and reconciling the storefront with accounting was a manual, error-prone process.",
+      "Online sellers whose storefront doesn't sync with inventory end up reconciling orders against stock and accounting by hand.",
     solution:
-      "Odoo Website & eCommerce, Inventory, Sales, and Accounting connected so every order updates stock and financials automatically.",
+      "We connect Odoo Website & eCommerce, Inventory, Sales, and Accounting so every order updates stock and financials automatically.",
     outcome: "Online and offline sales visible in one dashboard, with automated fulfillment and reconciliation.",
     modules: ["Website & eCommerce", "Inventory", "Sales", "Accounting"],
     featured: false,
